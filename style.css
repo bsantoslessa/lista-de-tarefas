@@ -1,0 +1,165 @@
+@import url("https://fonts.google.com/specimen/Xanh+Mono");
+
+* {
+  padding: 0px;
+  margin: 10px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: flex-start;
+  
+  margin-left: auto;
+  height: auto;
+  min-height: 100vh;
+background-image: url(1c541b8dcdd5918507d2c19f6c838887.jpg);
+
+}
+
+#container_preenchimento{
+  justify-content: flex-start;
+  border-radius: 15px rgb(247, 208, 208);
+  padding: 30px 40px;
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container_TarefasAdicionadas {
+  background-color: rgb(247, 164, 164);
+  padding: 30px 20px;
+  border-radius: 25px;
+  display: flex;
+  width: 100%;
+}
+
+.botaoadd{
+  border: none;
+  background-color: rgba(141, 13, 13, 0.562);
+  padding: 15px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.input_usuario {
+  flex: 2;
+  font-size: 16px;
+  border: 0px solid #eeb4cf;
+  border-radius: 5px;
+  padding: 12px;
+  padding-left: 1;
+  font-weight: 500;
+  width: 50%;
+}
+@media (max-width:434px)  {
+  .input_usuario {
+    font-size: 14px;
+    border: 0px solid #ccaef3;
+    border-radius: 5px;
+    font-weight:bold;
+    width: 100%;
+  }
+
+  .container_TarefasAdicionadas {
+    background-color:  #fff;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .botaoadd{
+    border: none;
+    background-color: rgba(204, 19, 74, 0.562);
+    width: 50px;
+    margin-top: 20px;
+  }
+  #container_tarefas{
+padding: 0px;
+width: 100%;
+border: none;
+
+  }
+}
+
+.input_usuario:focus {
+  outline: none;
+  border-color: rgba(204, 19, 96, 0.5);
+}
+
+.tarefas_adicionadas {
+  background-color: #fff;
+  padding: 30px;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.item-icone{
+flex:10%;
+text-align: center;
+cursor: pointer;
+
+}
+.item-nome{
+  flex:65%;
+  padding: 10px;
+  border: 2px solid  rgba(12, 12, 12, 0.34);
+
+}
+.item-botao{
+  flex:10%;
+  border: none;
+}
+.botao-delete{
+  background-color: transparent;
+  border: none;
+  color: rgba(204, 20, 66, 0.966);
+  cursor: pointer;
+} 
+.container_tarefa{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+  justify-content: space-around;
+
+}
+.item_clicado{
+  background-color: rgb(186, 238, 186);
+
+}
+.clicado{
+  color: rgb(6, 0, 54);
+}
+.item_clicado .item-nome {
+
+text-decoration: line-through;
+color: rgb(7, 7, 7);
+
+}
+.nao_clicado{
+
+  color: rgb(70, 43, 226);
+
+}
+.fundo{
+  background-color:#eaaff061;
+  padding:5%;
+  
+}
+
+
+
